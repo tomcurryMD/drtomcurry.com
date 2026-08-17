@@ -337,6 +337,11 @@ main {
   gap: 1rem;
 }
 
+.work-cards,
+.collaboration-cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .card {
   min-height: 238px;
   padding: 1.35rem;
@@ -452,6 +457,13 @@ main {
   padding-left: 1.15rem;
 }
 
+.notice-action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+}
+
 .referral {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.6fr);
@@ -511,7 +523,7 @@ main {
 
   .nav-links {
     width: 100%;
-    overflow-x: auto;
+    flex-wrap: wrap;
     padding-bottom: 0.15rem;
   }
 
@@ -528,6 +540,10 @@ main {
 
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .notice-action {
+    justify-content: flex-start;
   }
 
   .quick-facts {
@@ -554,9 +570,8 @@ main {
   }
 
   .nav-links a {
-    padding: 0.55rem 0.65rem;
+    padding: 0.5rem 0.55rem;
     font-size: 0.86rem;
-    white-space: nowrap;
   }
 
   .hero-inner {
