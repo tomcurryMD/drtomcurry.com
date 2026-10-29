@@ -10,9 +10,17 @@
     />
     <meta name="author" content="Dr. Tom Curry" />
     <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#17243B" />
     <link rel="canonical" href="https://drtomcurry.com/" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+    />
     <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="preload" as="image" href="assets/head-shot-2026-960.webp" type="image/webp" />
     <meta property="og:title" content="Independent Medical Review | Dr. Tom Curry" />
     <meta
       property="og:description"
@@ -20,7 +28,10 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://drtomcurry.com/" />
-    <meta property="og:image" content="https://drtomcurry.com/assets/head-shot-2026.png" />
+    <meta property="og:image" content="https://drtomcurry.com/assets/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -31,7 +42,7 @@
         "jobTitle": "Family Physician and Independent Medical Reviewer",
         "url": "https://drtomcurry.com/",
         "email": "mailto:contact@drtomcurry.com",
-        "image": "https://drtomcurry.com/assets/head-shot-2026.png",
+        "image": "https://drtomcurry.com/assets/head-shot-2026-960.jpg",
         "knowsAbout": [
           "Independent medical review",
           "Occupational medicine",
@@ -55,168 +66,199 @@
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header">
-      <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="#">
-          <span class="brand-name">Dr. Tom Curry, MD, MSc, CCFP</span>
-          <span class="brand-subtitle">Independent medical reviewer and family physician</span>
+      <nav class="nav wrap" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="Dr. Tom Curry, home">
+          <span class="brand-name">Dr. Tom Curry</span>
+          <span class="brand-post">MD, MSc, CCFP</span>
         </a>
-        <div class="nav-links">
-          <a href="#reviews">Medical Review</a>
-          <a href="#experience">Experience</a>
-          <a href="#profile">Profile</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
-          <a href="https://drcurry.ca/">Addiction Care</a>
-        </div>
+        <ul class="nav-links">
+          <li><a href="#review">Medical review</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a class="nav-contact" href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero-inner">
-        <div>
-          <p class="eyebrow">Independent medical review | Canada</p>
+    <section class="hero" id="top">
+      <div class="hero-inner wrap">
+        <div class="hero-copy">
           <h1>Clear, impartial medical review for complex files.</h1>
           <p class="lede">
             Dr. Tom Curry is a family physician and medical consultant providing asynchronous
             file review, structured written opinions, and selected independent medical
-            examination services. His broad clinical background supports practical analysis of
-            diagnosis, treatment, prognosis, function, restrictions, and work capacity.
+            examination services across Canada. His broad clinical background supports
+            practical analysis of diagnosis, treatment, prognosis, function, restrictions, and
+            work capacity.
           </p>
-          <div class="cta-row" aria-label="Primary links">
+          <div class="cta-row">
             <a
               class="button primary"
               href="mailto:contact@drtomcurry.com?subject=Independent%20medical%20review%20inquiry"
-            >Discuss a file review</a>
-            <a class="button secondary" href="#reviews">View review services</a>
+              >Discuss a file review</a
+            >
+            <a class="button quiet" href="#review">See review services</a>
           </div>
-          <div class="quick-facts" aria-label="Professional highlights">
-            <div class="fact">
-              <strong>Asynchronous review</strong>
-              <span>Focused analysis and written opinions without unnecessary scheduling.</span>
+          <dl class="hero-facts">
+            <div>
+              <dt>Asynchronous review</dt>
+              <dd>Focused analysis and written opinions without unnecessary scheduling.</dd>
             </div>
-            <div class="fact">
-              <strong>Broad clinical judgment</strong>
-              <span>Family medicine perspective across complex and overlapping conditions.</span>
+            <div>
+              <dt>Broad clinical judgment</dt>
+              <dd>Family medicine perspective across complex and overlapping conditions.</dd>
             </div>
-            <div class="fact">
-              <strong>Occupational focus</strong>
-              <span>Function, restrictions, recovery, and return-to-work considerations.</span>
+            <div>
+              <dt>Occupational focus</dt>
+              <dd>Function, restrictions, recovery, and return-to-work considerations.</dd>
             </div>
-          </div>
+          </dl>
         </div>
 
-        <aside class="profile-panel" aria-label="Dr. Tom Curry profile summary">
-          <div class="portrait-card">
-            <div class="portrait-wrap">
-              <img src="assets/head-shot-2026.png" alt="Dr. Tom Curry" />
-            </div>
-            <div class="portrait-text">
-              <h2>Dr. Tom Curry</h2>
-              <p>
-                CCFP family physician, independent medical reviewer, clinical instructor, and
-                medical consultant with an MSc and a background in neuroscience research.
-              </p>
-              <div class="contact-box">
-                <a href="mailto:contact@drtomcurry.com?subject=Professional%20inquiry">
-                  <small>General inquiries</small>
-                  <strong>contact@drtomcurry.com</strong>
-                </a>
-                <a href="https://www.linkedin.com/in/tom-curry-md-6902223b/">
-                  <small>Professional profile</small>
-                  <strong>LinkedIn</strong>
-                </a>
-              </div>
-            </div>
-          </div>
-        </aside>
+        <figure class="portrait">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="assets/head-shot-2026-640.webp 640w, assets/head-shot-2026-960.webp 960w"
+              sizes="(max-width: 860px) 70vw, 420px"
+            />
+            <img
+              src="assets/head-shot-2026-960.jpg"
+              srcset="assets/head-shot-2026-640.jpg 640w, assets/head-shot-2026-960.jpg 960w"
+              sizes="(max-width: 860px) 70vw, 420px"
+              width="960"
+              height="1200"
+              alt="Portrait of Dr. Tom Curry"
+            />
+          </picture>
+          <figcaption>
+            <span class="portrait-name">Dr. Thomas E. Curry</span>
+            <span>Family physician, independent medical reviewer, and UBC Clinical Instructor. North Vancouver, BC.</span>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
+    <aside class="patient-note" aria-label="For patients">
+      <div class="wrap patient-note-inner">
+        <p>
+          <strong>Looking for addiction medicine care?</strong>
+          Patient access, low-barrier opioid use disorder care, and referral information are at
+          the shared clinic website.
+        </p>
+        <a href="https://drcurry.ca/">Visit drcurry.ca</a>
+      </div>
+    </aside>
+
     <main id="main">
-      <section class="notice-band" aria-label="Clinical access note">
-        <div class="notice-inner">
-          <div>
-            <h2>Looking for addiction medicine?</h2>
-            <p>
-              Patient access, low-barrier opioid use disorder care, and addiction-medicine
-              referral information remain at the shared clinic website.
+      <section id="review" class="section">
+        <div class="wrap review-layout">
+          <div class="review-copy">
+            <h2>Independent medical review</h2>
+            <p class="section-intro">
+              Careful record synthesis, evidence-based reasoning, and direct answers to the
+              questions that matter to the referring organization.
             </p>
+
+            <div class="service-list">
+              <article class="service">
+                <h3>Asynchronous file review</h3>
+                <p>
+                  Review of medical records and referral materials with a clear clinical
+                  chronology, identification of material evidence, and a focused written
+                  opinion. Well suited to questions that do not require an in-person
+                  examination.
+                </p>
+              </article>
+              <article class="service">
+                <h3>Medical advisory work</h3>
+                <p>
+                  Independent analysis of diagnosis, investigations, treatment, prognosis,
+                  function, restrictions, recovery barriers, and return-to-work considerations
+                  for insurers, employers, legal professionals, and public organizations.
+                </p>
+              </article>
+              <article class="service">
+                <h3>Selected IME services</h3>
+                <p>
+                  Independent medical examinations are considered where a direct assessment
+                  adds value. Scope, jurisdiction, records, referral questions, timelines,
+                  conflicts, and fees are confirmed before an assignment is accepted.
+                </p>
+              </article>
+            </div>
           </div>
-          <p class="notice-action">
-            <a class="button secondary" href="https://drcurry.ca/">Visit drcurry.ca</a>
-          </p>
+
+          <div class="sheet-wrap">
+            <div class="sheet-stack">
+            <div class="sheet-back" aria-hidden="true"></div>
+            <div class="sheet" role="group" aria-labelledby="sheet-title">
+              <div class="sheet-head">
+                <p class="sheet-kind">Independent medical file review</p>
+                <h3 id="sheet-title">How a written opinion is organized</h3>
+              </div>
+              <ol class="sheet-parts">
+                <li>
+                  <h4>Referral questions</h4>
+                  <p>Restated as received, so each answer can be matched to its question.</p>
+                </li>
+                <li>
+                  <h4>Records reviewed</h4>
+                  <p>An inventory of the material provided, with relevant gaps noted.</p>
+                </li>
+                <li>
+                  <h4>Clinical chronology</h4>
+                  <p>Key events, investigations, and treatment set out in date order.</p>
+                </li>
+                <li>
+                  <h4>Analysis</h4>
+                  <p>Material evidence weighed, with assumptions and limits stated plainly.</p>
+                </li>
+                <li>
+                  <h4>Opinion</h4>
+                  <p>A direct answer to each referral question.</p>
+                </li>
+              </ol>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap">
+          <dl class="principles" aria-label="Review approach">
+            <div>
+              <dt>Proportionate</dt>
+              <dd>Attention follows the referral question and the material evidence.</dd>
+            </div>
+            <div>
+              <dt>Independent</dt>
+              <dd>Conclusions are separated from assumptions, advocacy, and unsupported inference.</dd>
+            </div>
+            <div>
+              <dt>Readable</dt>
+              <dd>Reports are organized for practical use by clinical and non-clinical readers.</dd>
+            </div>
+            <div>
+              <dt>Timely</dt>
+              <dd>Asynchronous work allows focused turnaround without avoidable scheduling delay.</dd>
+            </div>
+          </dl>
         </div>
       </section>
 
-      <section id="reviews" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Core service</p>
-          <h2>Independent Medical Review</h2>
-          <p>
-            Careful record synthesis, evidence-based reasoning, and direct answers to the
-            questions that matter to the referring organization.
-          </p>
-        </div>
-        <div class="cards review-cards">
-          <article class="card accent">
-            <h3>Asynchronous file review</h3>
-            <p>
-              Review of medical records and referral materials with a clear clinical chronology,
-              identification of material evidence, and a focused written opinion. Well suited to
-              questions that do not require an in-person examination.
-            </p>
-          </article>
-          <article class="card accent">
-            <h3>Medical advisory work</h3>
-            <p>
-              Independent analysis of diagnosis, investigations, treatment, prognosis, function,
-              restrictions, recovery barriers, and return-to-work considerations for insurers,
-              employers, legal professionals, and public organizations.
-            </p>
-          </article>
-          <article class="card accent">
-            <h3>Selected IME services</h3>
-            <p>
-              Independent medical examinations are considered where a direct assessment adds
-              value. Scope, jurisdiction, records, referral questions, timelines, conflicts, and
-              fees are confirmed before an assignment is accepted.
-            </p>
-          </article>
-        </div>
-        <div class="review-principles" aria-label="Review approach">
+      <section id="experience" class="section tint">
+        <div class="wrap two-col">
           <div>
-            <strong>Proportionate</strong>
-            <span>Attention follows the referral question and the material evidence.</span>
-          </div>
-          <div>
-            <strong>Independent</strong>
-            <span>Conclusions are separated from assumptions, advocacy, and unsupported inference.</span>
-          </div>
-          <div>
-            <strong>Readable</strong>
-            <span>Reports are organized for practical use by clinical and non-clinical readers.</span>
-          </div>
-          <div>
-            <strong>Timely</strong>
-            <span>Asynchronous work allows focused turnaround without avoidable scheduling delay.</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="experience" class="section alt">
-        <div class="section-inner">
-          <div class="section-heading">
-            <p class="section-kicker">Relevant experience</p>
             <h2>Clinical breadth applied to medical review</h2>
-            <p>
+            <p class="section-intro">
               A generalist perspective is useful when a file crosses diagnostic categories,
               contains competing explanations, or must be understood in the context of the whole
               person and the demands of work.
             </p>
-          </div>
-          <div class="profile-grid">
-            <div class="bio">
+            <div class="prose">
               <p>
                 Dr. Curry's review and advisory experience includes work involving large
                 provincial workers' compensation systems, independent assessment organizations,
@@ -226,92 +268,84 @@
               <p>
                 His clinical background includes comprehensive longitudinal family medicine,
                 Indigenous primary care, virtual rapid addiction medicine, chronic-disease
-                consultation, prenatal care, care of older adults, office procedures, and care for
-                patients with complex medical and social circumstances.
+                consultation, prenatal care, care of older adults, office procedures, and care
+                for patients with complex medical and social circumstances.
               </p>
               <p>
                 Assignments are considered across Canadian jurisdictions where licensing and the
-                nature of the work permit. Every engagement remains subject to conflict screening,
-                an agreed scope, appropriate records, and a secure method of information transfer.
+                nature of the work permit. Every engagement remains subject to conflict
+                screening, an agreed scope, appropriate records, and a secure method of
+                information transfer.
               </p>
             </div>
-            <div class="credential-list">
-              <div class="credential">
-                <strong>Independent Medical Consultant, Occupational Health and Workers’ Compensation</strong>
-                <span>Provides physician file reviews and clinical opinions on work-related injuries, functional limitations, and return-to-work considerations.</span>
-              </div>
-              <div class="credential">
-                <strong>Independent medical review and IME services</strong>
-                <span>Medical-legal, insurance, disability, and occupational-health contexts.</span>
-              </div>
-              <div class="credential">
-                <strong>Provincial workers' compensation experience</strong>
-                <span>Medical advisory and file-review work involving large public systems.</span>
-              </div>
-              <div class="credential">
-                <strong>Comprehensive family medicine</strong>
-                <span>Longitudinal care across the life course and across clinical domains.</span>
-              </div>
-              <div class="credential">
-                <strong>Evidence and research</strong>
-                <span>MSc training, peer-reviewed neuroscience research, and evidence-based medicine.</span>
-              </div>
+          </div>
+
+          <dl class="entry-list">
+            <div>
+              <dt>Independent medical consultant, occupational health and workers' compensation</dt>
+              <dd>Physician file reviews and clinical opinions on work-related injuries, functional limitations, and return-to-work considerations.</dd>
             </div>
+            <div>
+              <dt>Independent medical review and IME services</dt>
+              <dd>Medical-legal, insurance, disability, and occupational-health contexts.</dd>
+            </div>
+            <div>
+              <dt>Provincial workers' compensation experience</dt>
+              <dd>Medical advisory and file-review work involving large public systems.</dd>
+            </div>
+            <div>
+              <dt>Comprehensive family medicine</dt>
+              <dd>Longitudinal care across the life course and across clinical domains.</dd>
+            </div>
+            <div>
+              <dt>Evidence and research</dt>
+              <dd>MSc training, peer-reviewed neuroscience research, and evidence-based medicine.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="wrap other-work">
+          <h3 class="subhead">Other areas of work</h3>
+          <div class="other-grid">
+            <article>
+              <h4>Comprehensive family medicine</h4>
+              <p>
+                Longitudinal primary care including prenatal care, chronic disease, care of older
+                adults, contraception, joint injections, office procedures, and addiction
+                medicine.
+              </p>
+            </article>
+            <article>
+              <h4>Indigenous health and cultural safety</h4>
+              <p>
+                Current and past clinical work with Indigenous communities, alongside
+                consultation on health-care education that respects the distinct protocols and
+                knowledge systems of individual Nations.
+              </p>
+            </article>
+            <article>
+              <h4>Medical education</h4>
+              <p>
+                Clinical teaching with the UBC Department of Family Practice and prior leadership
+                in evidence-based medicine education.
+              </p>
+            </article>
+            <article>
+              <h4>Governance and professional service</h4>
+              <p>
+                Committee work with provincial medical organizations and selected advisory or
+                curriculum projects aligned with clinical experience.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="work" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Broader practice</p>
-          <h2>Other Areas of Work</h2>
-          <p>
-            Independent review is supported by an active clinical practice and experience in
-            education, governance, research, and health-system work.
-          </p>
-        </div>
-        <div class="cards work-cards">
-          <article class="card">
-            <h3>Comprehensive family medicine</h3>
-            <p>
-              Longitudinal primary care including prenatal care, chronic disease, care of older
-              adults, contraception, joint injections, office procedures, and addiction medicine.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Indigenous health and cultural safety</h3>
-            <p>
-              Current and past clinical work with Indigenous communities, alongside consultation
-              on health-care education that respects the distinct protocols and knowledge systems
-              of individual Nations.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Medical education</h3>
-            <p>
-              Clinical teaching with the UBC Department of Family Practice and prior leadership
-              in evidence-based medicine education.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Governance and professional service</h3>
-            <p>
-              Committee work with provincial medical organizations and selected advisory or
-              curriculum projects aligned with clinical experience.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="profile" class="section alt">
-        <div class="section-inner">
-          <div class="section-heading">
-            <p class="section-kicker">Current roles</p>
-            <h2>Professional Profile</h2>
-            <p>Clinical practice, medical consulting, teaching, and professional service.</p>
-          </div>
-          <div class="profile-grid">
-            <div class="bio">
+      <section id="profile" class="section">
+        <div class="wrap two-col">
+          <div>
+            <h2>Professional profile</h2>
+            <div class="prose">
               <p>
                 Dr. Curry is a North Vancouver family physician practicing comprehensive,
                 relationship-based primary care at Kal'númet Primary Care Clinic. His prior work
@@ -325,104 +359,140 @@
                 Doctors of BC Insurance Committee.
               </p>
             </div>
-            <div class="credential-list">
-              <div class="credential">
-                <strong>Family Physician, Kal'númet Primary Care Clinic</strong>
-                <span>Comprehensive longitudinal primary care, 2024 to present.</span>
-              </div>
-              <div class="credential">
-                <strong>Clinical Instructor, Department of Family Practice, University of British Columbia</strong>
-                <span>Faculty of Medicine, 2026 to present.</span>
-              </div>
-              <div class="credential">
-                <strong>Rural Scholar, Department of Family Practice, University of British Columbia</strong>
-              </div>
-              <div class="credential">
-                <strong>Independent Medical Consultant, Occupational Health and Workers’ Compensation</strong>
-                <span>Provides physician file reviews and clinical opinions on work-related injuries, functional limitations, and return-to-work considerations.</span>
-              </div>
-            </div>
           </div>
+
+          <ul class="roles" aria-label="Current roles">
+            <li>
+              <span class="role-years">2024 to present</span>
+              <span class="role-title">Family Physician</span>
+              <span class="role-org">Kal'númet Primary Care Clinic</span>
+            </li>
+            <li>
+              <span class="role-years">2026 to present</span>
+              <span class="role-title">Clinical Instructor</span>
+              <span class="role-org">Department of Family Practice, Faculty of Medicine, University of British Columbia</span>
+            </li>
+            <li>
+              <span class="role-years">Current</span>
+              <span class="role-title">Rural Scholar</span>
+              <span class="role-org">Department of Family Practice, University of British Columbia</span>
+            </li>
+            <li>
+              <span class="role-years">Current</span>
+              <span class="role-title">Independent Medical Consultant</span>
+              <span class="role-org">Occupational health and workers' compensation</span>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section id="education" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Education and training</p>
-          <h2>Education Profile</h2>
-          <p>Academic degrees, secondary education, and family medicine training and certification.</p>
-          <p>
-            His MSc training and peer-reviewed neuroscience research inform a disciplined,
-            evidence-oriented approach to clinical and professional work.
-          </p>
-        </div>
-        <div class="credential-list education-grid">
-          <div class="credential">
-            <strong>Family Medicine Residency and CCFP, 2020</strong>
-            <span>Residency: Queen’s University, Department of Family Medicine. Certification: College of Family Physicians of Canada.</span>
-          </div>
-          <div class="credential">
-            <strong>MD, 2016</strong>
-            <span>McMaster University Michael G. DeGroote School of Medicine.</span>
-          </div>
-          <div class="credential">
-            <strong>MSc, 2013</strong>
-            <span>University of Toronto, Cell and Systems Biology.</span>
-          </div>
-          <div class="credential">
-            <strong>Honours Bachelor of Science, 2011</strong>
-            <span>University of Toronto, Neuroscience Specialist, with High Distinction.</span>
-          </div>
-          <div class="credential">
-            <strong>Ontario Secondary School Diploma, 2007</strong>
-            <span>Northern Secondary School, Toronto, ON, Gifted Program.</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Professional inquiries</p>
-          <h2>Discuss an assignment</h2>
-          <p>
-            Initial inquiries may outline the organization, general nature of the requested work,
-            jurisdiction, and anticipated timeline. Do not include identifying medical information
-            or attach records at this stage.
-          </p>
-        </div>
-        <div class="contact-panel">
+      <section id="education" class="section tint">
+        <div class="wrap two-col">
           <div>
-            <h3>Independent review, IME, and advisory inquiries</h3>
-            <p>
-              <a href="mailto:contact@drtomcurry.com?subject=Independent%20medical%20review%20inquiry">
-                contact@drtomcurry.com
-              </a>
-            </p>
-            <p class="privacy-note">
-              For professional and administrative inquiries only. Do not send personal health
-              information, medical records, IME files, or urgent clinical concerns by regular
-              email. Secure transfer arrangements will be provided when required.
+            <h2>Education and training</h2>
+            <p class="section-intro">
+              MSc training and peer-reviewed neuroscience research inform a disciplined,
+              evidence-oriented approach to clinical and professional work.
             </p>
           </div>
-          <p class="contact-action">
+
+          <ol class="timeline" reversed>
+            <li>
+              <span class="tl-year">2020</span>
+              <div>
+                <span class="tl-title">Family Medicine Residency and CCFP</span>
+                <span class="tl-detail">Residency, Queen's University Department of Family Medicine. Certification, College of Family Physicians of Canada.</span>
+              </div>
+            </li>
+            <li>
+              <span class="tl-year">2016</span>
+              <div>
+                <span class="tl-title">Doctor of Medicine</span>
+                <span class="tl-detail">McMaster University, Michael G. DeGroote School of Medicine.</span>
+              </div>
+            </li>
+            <li>
+              <span class="tl-year">2013</span>
+              <div>
+                <span class="tl-title">Master of Science</span>
+                <span class="tl-detail">University of Toronto, Cell and Systems Biology.</span>
+              </div>
+            </li>
+            <li>
+              <span class="tl-year">2011</span>
+              <div>
+                <span class="tl-title">Honours Bachelor of Science</span>
+                <span class="tl-detail">University of Toronto, Neuroscience Specialist, with High Distinction.</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="wrap contact-layout">
+          <div>
+            <h2>Discuss an assignment</h2>
+            <p class="contact-intro">
+              For independent review, IME, and advisory inquiries, send a short note outlining
+              the organization, the general nature of the work, the jurisdiction, and the
+              anticipated timeline.
+            </p>
             <a
-              class="button primary"
+              class="contact-email"
               href="mailto:contact@drtomcurry.com?subject=Independent%20medical%20review%20inquiry"
-            >Email a general inquiry</a>
-            <a class="button secondary" href="https://www.linkedin.com/in/tom-curry-md-6902223b/">View LinkedIn</a>
-          </p>
+              >contact@drtomcurry.com</a
+            >
+            <div class="cta-row">
+              <a
+                class="button light"
+                href="mailto:contact@drtomcurry.com?subject=Independent%20medical%20review%20inquiry"
+                >Email an inquiry</a
+              >
+              <a class="button outline-light" href="https://www.linkedin.com/in/tom-curry-md-6902223b/"
+                >View LinkedIn</a
+              >
+            </div>
+            <p class="privacy-note">
+              Professional and administrative inquiries only. Please do not send personal health
+              information, medical records, IME files, or urgent clinical concerns by regular
+              email. Secure transfer arrangements are provided when required.
+            </p>
+          </div>
+
+          <div class="steps-wrap">
+            <h3>How an engagement works</h3>
+            <ol class="steps">
+              <li>
+                <h4>Initial inquiry</h4>
+                <p>A brief email describing the request. No identifying medical information at this stage.</p>
+              </li>
+              <li>
+                <h4>Conflict screening and scope</h4>
+                <p>Referral questions, records, jurisdiction, timelines, and fees are agreed before acceptance.</p>
+              </li>
+              <li>
+                <h4>Secure records transfer</h4>
+                <p>Records arrive by a secure method arranged for the file.</p>
+              </li>
+              <li>
+                <h4>Written opinion</h4>
+                <p>A structured report answering each referral question.</p>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="footer-inner">
+      <div class="wrap footer-inner">
         <span>Dr. Thomas Edward Curry, MD, MSc, CCFP</span>
-        <span>
-          <a href="mailto:contact@drtomcurry.com">Contact</a> |
-          <a href="https://drcurry.ca/">Addiction care</a> |
-          <a href="https://drannacurry.com/">Dr. Anna Curry</a>
-        </span>
+        <ul class="footer-links">
+          <li><a href="mailto:contact@drtomcurry.com">Contact</a></li>
+          <li><a href="https://drcurry.ca/">Addiction care</a></li>
+          <li><a href="https://drannacurry.com/">Dr. Anna Curry</a></li>
+        </ul>
       </div>
     </footer>
   </body>
