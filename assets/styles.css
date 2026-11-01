@@ -5,14 +5,14 @@ html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: #ffffff; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; }
 a { color: #1F3A63; }
-a:hover { color: #0F1D33; }
+a:hover { color: #14243F; }
 a:hover strong, a:hover span { text-decoration: underline; text-underline-offset: 0.2em; }
 :focus-visible { outline: 2px solid #4A78B8; outline-offset: 3px; }
 section[id], main { scroll-margin-top: 16px; }
 
 .skip-link {
   position: absolute; left: 1rem; top: -4rem; z-index: 20;
-  padding: 0.6rem 1rem; color: #fff; background: #0F1D33;
+  padding: 0.6rem 1rem; color: #fff; background: #14243F;
 }
 .skip-link:focus { top: 1rem; }
 
