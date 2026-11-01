@@ -21,7 +21,7 @@ section[id], main { scroll-margin-top: 16px; }
   section > .wrap { padding-top: 72px !important; padding-bottom: 72px !important; }
   .hero > .wrap { padding-top: 0 !important; padding-bottom: 0 !important; }
   .hero > .wrap > div:first-child { padding-top: 56px !important; padding-bottom: 48px !important; }
-  .hero > .wrap > div:last-child { padding-top: 0 !important; max-width: 280px !important; }
+  .hero > .wrap > div:last-child { padding-top: 0 !important; padding-bottom: 56px !important; max-width: 280px !important; margin: 0 auto !important; }
   .svc { padding: 28px 0 !important; border-right: 0 !important; border-bottom: 1px solid #E4E0D8; }
   .svc:last-child { border-bottom: 0; }
   .pcontact { padding-left: 0 !important; border-left: 0 !important; padding-top: 12px !important; }
