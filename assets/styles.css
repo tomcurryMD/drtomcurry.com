@@ -33,3 +33,20 @@ section[id], main { scroll-margin-top: 16px; }
 @media (max-width: 760px) {
   .hero-portrait { width: 124px; margin: 32px 18px 8px 0; }
 }
+
+/* Contact block beside the hero copy */
+@media (max-width: 1000px) {
+  .hero-contact { flex-basis: 100% !important; align-self: auto !important; margin: 0 !important; border-left: 0 !important; padding: 0 0 56px 0 !important; flex-direction: row !important; flex-wrap: wrap; gap: 20px 40px !important; }
+}
+
+/* Confirmation when an email link is clicked */
+#copy-toast {
+  position: fixed; left: 50%; bottom: 28px; z-index: 50;
+  transform: translate(-50%, 16px); opacity: 0; pointer-events: none;
+  padding: 12px 20px; background: #14243F; color: #ffffff;
+  font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 14.5px;
+  box-shadow: 0 12px 30px -12px rgba(20, 36, 63, 0.5);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+#copy-toast.show { opacity: 1; transform: translate(-50%, 0); }
+@media (prefers-reduced-motion: reduce) { #copy-toast { transition: none; } }

@@ -107,6 +107,16 @@
           <a href="#reviews" style="display: inline-flex; align-items: center; min-height: 54px; padding: 0 30px; border: 1px solid #14243F; color: #14243F; text-decoration: none; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase">View review services</a>
         </div>
       </div>
+      <aside class="hero-contact" aria-label="Contact" style="flex: 0 0 auto; margin-left: auto; align-self: flex-start; margin-top: 142px; display: flex; flex-direction: column; gap: 28px; padding: 6px 0 6px 36px; border-left: 1px solid #D9D1C1">
+        <a href="mailto:contact@drtomcurry.com?subject=Professional%20inquiry" style="display: flex; flex-direction: column; gap: 6px; text-decoration: none">
+          <small style="font-size: 11.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #5F6672">General inquiries</small>
+          <strong style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 500; font-size: 22px; line-height: 1.25; color: #14243F; white-space: nowrap">contact@drtomcurry.com</strong>
+        </a>
+        <a href="https://www.linkedin.com/in/tom-curry-md-6902223b/" style="display: flex; flex-direction: column; gap: 6px; text-decoration: none">
+          <small style="font-size: 11.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #5F6672">Professional profile</small>
+          <strong style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 500; font-size: 20px; line-height: 1.25; color: #14243F">LinkedIn</strong>
+        </a>
+      </aside>
     </div>
   </section>
 
@@ -415,5 +425,28 @@
     </div>
   </footer>
 </div>
+    <div id="copy-toast" role="status" aria-live="polite"></div>
+    <script>
+      (function () {
+        var toast = document.getElementById('copy-toast');
+        var timer;
+        function show(msg) {
+          toast.textContent = msg;
+          toast.classList.add('show');
+          clearTimeout(timer);
+          timer = setTimeout(function () { toast.classList.remove('show'); }, 3200);
+        }
+        document.querySelectorAll('a[href^="mailto:"]').forEach(function (a) {
+          a.addEventListener('click', function () {
+            var addr = a.getAttribute('href').replace('mailto:', '').split('?')[0];
+            try {
+              navigator.clipboard.writeText(addr).then(function () {
+                show('Email address copied: ' + addr);
+              }, function () { show('Email: ' + addr); });
+            } catch (e) { show('Email: ' + addr); }
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
